@@ -40,6 +40,262 @@ body {
   color: #111111;
 }
 
+.page-contact {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* ============ CONTACT PAGE ============ */
+.contact-hero {
+  position: relative;
+  padding: 4.5rem 2rem 5rem;
+  background: url("../images/contact_main_bg.png") center / cover no-repeat;
+  overflow: hidden;
+}
+
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 207, 232, 0.86) 0%,
+    rgba(0, 207, 232, 0.62) 48%,
+    rgba(0, 0, 0, 0.18) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contact-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 58%;
+  background: url("../images/contactus_hero.png") center / cover no-repeat;
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contact-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 430px);
+  gap: 3.25rem;
+  align-items: start;
+}
+
+.contact-hero__title {
+  font-size: clamp(2.6rem, 4.8vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.05;
+  margin-bottom: 1.6rem;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-hero__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.55rem;
+  width: 210px;
+  height: 10px;
+  background: var(--cyan);
+  border-radius: 999px;
+}
+
+.contact-hero__office-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.05;
+  margin-bottom: 0.75rem;
+}
+
+.contact-hero__office-cyan {
+  color: var(--cyan);
+}
+
+.contact-hero__office-white {
+  color: #ffffff;
+}
+
+.contact-hero__office-subtext {
+  max-width: 520px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.contact-hero__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 520px;
+}
+
+.contact-hero__card {
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.contact-hero__card--cyan {
+  background: var(--cyan);
+  color: #000000;
+}
+
+.contact-hero__card--dark {
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+.contact-hero__card-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 1.25rem;
+}
+
+.contact-hero__card-icon--dark {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-hero__card-title {
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-bottom: 0.15rem;
+}
+
+.contact-hero__card-title--light {
+  color: #ffffff;
+}
+
+.contact-hero__card-lines {
+  font-weight: 700;
+  font-size: 0.85rem;
+  opacity: 0.95;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.contact-hero__card-lines--light {
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 1;
+}
+
+.contact-form-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.35rem 1.25rem 1.25rem;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
+  color: #111111;
+}
+
+.contact-form-card__title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 0.35rem;
+}
+
+.contact-form-card__accent {
+  color: var(--cyan);
+}
+
+.contact-form-card__subtext {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.contact-form__label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 0.35rem;
+}
+
+.contact-form__input {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #ffffff;
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.contact-form__input:focus {
+  border-color: rgba(0, 207, 232, 0.8);
+  box-shadow: 0 0 0 3px rgba(0, 207, 232, 0.18);
+}
+
+.contact-form__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form__submit {
+  margin-top: 0.25rem;
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: var(--cyan);
+  color: #000000;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-form__submit:hover {
+  background: var(--cyan-hover);
+}
+
+@media (max-width: 980px) {
+  .contact-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .contact-hero {
+    padding: 3.5rem 1.25rem 4rem;
+  }
+
+  .contact-hero::after {
+    width: 100%;
+    opacity: 0.22;
+  }
+}
+
 /* ============ STICKY BLACK HEADER ============ */
 .header {
   position: sticky;
@@ -136,11 +392,14 @@ body {
 
 /* ============ HERO SECTION (Figma match) ============ */
 .hero {
+  --hero-person-scale: 1.5;
+  --hero-person-offset-y: 72px;
+  --hero-person-max-height: 820px;
   position: relative;
-  min-height: 85vh;
+  min-height: 92vh;
   display: flex;
   align-items: center;
-  padding: 3rem 2rem 3.5rem;
+  padding: 4rem 2.5rem 4.25rem;
   background-color: #0a0a0a;
   background-image: url('../images/hero-bg.png');
   background-size: cover;
@@ -169,7 +428,7 @@ body {
 }
 
 .hero__heading {
-  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+  font-size: clamp(3.2rem, 6vw, 5rem);
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -180,7 +439,7 @@ body {
 }
 
 .hero__subtext {
-  font-size: 1.20rem;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 1.5rem;
   max-width: 520px;
@@ -223,8 +482,8 @@ body {
   height: 100%;
   display: flex;
   align-items: flex-end;
-  margin-right: -200px; /* push person right to the visual edge */
-  margin-bottom: -20px; /* let feet sit closer to bottom of hero */
+  margin-right: -545px; /* push person right to the visual edge */
+  margin-bottom: -164px; /* let feet sit closer to bottom of hero */
 }
 
 /* Home hero person cutout */
@@ -232,12 +491,12 @@ body {
   position: relative;
   z-index: 1;
   height: auto;
-  max-height: 820px;
+  max-height: var(--hero-person-max-height);
   width: auto;
   object-fit: contain;
   object-position: bottom right;
   transform-origin: bottom right;
-  transform: translateY(40px) scale(1.2);
+  transform: translateY(var(--hero-person-offset-y)) scale(var(--hero-person-scale));
 }
 
 /* About page instructor cutout */
