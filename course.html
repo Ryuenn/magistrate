@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+<body class="page-course">
   <header class="header">
     <a href="index.html" class="header__logo">
       <img src="assets/images/magistratelogo1.png" alt="Magistrate Court Mastermind" class="header__logo-img">
@@ -17,12 +17,7 @@
     <nav>
       <ul class="header__nav">
         <li><a href="index.html">HOME</a></li>
-        <li class="nav-dropdown">
-          <a href="course.html" class="nav-active">COURSE</a>
-          <ul class="dropdown-menu">
-            <li><a href="course.html">Magistrate Court Masterclass</a></li>
-          </ul>
-        </li>
+        <li><a href="course.html" class="nav-active">COURSES</a></li>
         <li><a href="about.html">ABOUT US</a></li>
         <li><a href="index.html#contact">CONTACT</a></li>
       </ul>
@@ -31,13 +26,314 @@
   </header>
 
   <main>
-    <section class="pricing-section">
-      <div class="pricing-card">
-        <h2 class="pricing-card__title">Magistrate Court Masterclass</h2>
-        <p class="pricing-card__subtitle">An Attorney-Led Curriculum To Help You Navigate Small Claims, Evictions, And Civil Disputes With Confidence.</p>
-        <div class="pricing-card__price">$<span id="priceDisplay">999.99</span></div>
-        <button type="button" class="pricing-card__btn" id="payBtn">Pay with Card</button>
-        <p id="payError" style="color: #e74c3c; font-size: 0.85rem; margin-top: 1rem; display: none;"></p>
+    <!-- COURSE HERO -->
+    <section class="course-hero">
+      <div class="course-hero__inner">
+        <!-- Left column: title, instructor meta -->
+        <div class="course-hero__left">
+          <h1 class="course-hero__title">
+            Magistrate Court Mastermind
+            <span class="course-hero__title-accent">– Full Access</span>
+          </h1>
+
+          <div class="course-hero__meta">
+            <div class="course-hero__instructor">
+              <div class="course-hero__instructor-badge">IA</div>
+              <div class="course-hero__instructor-text">
+                <span class="course-hero__instructor-label">Teacher</span>
+                <span class="course-hero__instructor-name">Ibrahim Awad</span>
+              </div>
+            </div>
+
+            <div class="course-hero__meta-box">
+              <div class="course-hero__meta-col">
+                <span class="course-hero__meta-label">Last Updated</span>
+                <span class="course-hero__meta-value">February 23, 2026</span>
+              </div>
+              <div class="course-hero__meta-divider"></div>
+              <div class="course-hero__meta-col">
+                <span class="course-hero__meta-label">Reviews</span>
+                <span class="course-hero__meta-value">0/0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: thumbnail + pricing/CTA -->
+        <div class="course-hero__right">
+          <aside class="course-product-card" aria-label="Course purchase card">
+            <div class="course-product-card__media">
+              <img src="assets/images/thumbnailawad.png" alt="Magistrate Court Masterclass Preview" class="course-product-card__thumbnail">
+            </div>
+
+            <div class="course-product-card__price">$<span id="priceDisplay">999.99</span></div>
+
+            <button type="button" class="course-product-card__btn course-product-card__btn--primary" id="payBtn">ENROLL NOW</button>
+            <button type="button" class="course-product-card__btn course-product-card__btn--secondary">BUY COURSE</button>
+            <p id="payError" class="course-product-card__error" style="display: none;"></p>
+
+            <div class="course-product-card__divider" aria-hidden="true"></div>
+
+            <div class="course-product-card__includes">
+              <h3 class="course-product-card__includes-title">This course includes:</h3>
+              <div class="course-product-card__rows">
+                <div class="course-product-card__row">
+                  <div class="course-product-card__row-left">
+                    <i class="fa-solid fa-play-circle"></i>
+                    <span>Lectures</span>
+                  </div>
+                  <div class="course-product-card__row-right">12</div>
+                </div>
+                <div class="course-product-card__row">
+                  <div class="course-product-card__row-left">
+                    <i class="fa-solid fa-signal"></i>
+                    <span>Skill Level</span>
+                  </div>
+                  <div class="course-product-card__row-right">Intermediate</div>
+                </div>
+                <div class="course-product-card__row">
+                  <div class="course-product-card__row-left">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Certificate</span>
+                  </div>
+                  <div class="course-product-card__row-right">Yes</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT COURSE -->
+    <section class="course-about">
+      <div class="course-about__inner">
+        <h2 class="course-about__heading">
+          <span class="course-about__heading-about">ABOUT</span>
+          <span class="course-about__heading-course">COURSE</span>
+        </h2>
+        <p class="course-about__text">
+          <span class="course-about__lead">Magistrate Court Mastermind – Full Access</span>
+          gives you complete access to the full attorney-led training program designed to help you confidently navigate Georgia Magistrate Court. Learn how to prepare evidence, understand court procedures, negotiate effectively, and present your case with clarity and strategy. Includes lifetime access to all current and future course materials.
+        </p>
+      </div>
+    </section>
+
+    <!-- COURSE CURRICULUM -->
+    <section class="course-curriculum">
+      <div class="course-curriculum__inner">
+        <div class="course-curriculum__left">
+          <h2 class="course-curriculum__heading">
+            <span class="course-curriculum__heading-main">COURSE</span>
+            <span class="course-curriculum__heading-accent">CURRICULUM</span>
+          </h2>
+
+          <div class="course-curriculum__module">
+            <h3 class="course-curriculum__module-title">Module 1 - Foundations</h3>
+            <p class="course-curriculum__module-meta">0/12 ~ 1hr 30min</p>
+          </div>
+
+          <div class="course-curriculum__instructors-title">
+            <span class="course-curriculum__instructors-cyan">YOUR</span>
+            <span class="course-curriculum__instructors-black">INSTRUCTORS</span>
+          </div>
+
+          <div class="course-curriculum__instructor-card">
+            <div class="course-curriculum__instructor-top">
+              <div class="course-curriculum__instructor-badge">IA</div>
+              <div class="course-curriculum__instructor-info">
+                <div class="course-curriculum__instructor-name">Ibrahim Awad</div>
+                <div class="course-curriculum__instructor-courses">1 Course</div>
+              </div>
+            </div>
+            <div class="course-curriculum__instructor-stats">
+              <span class="course-curriculum__stat">
+                <i class="fa-solid fa-star"></i> 5.00 Rating
+              </span>
+              <span class="course-curriculum__stat">
+                <i class="fa-solid fa-user-group"></i> 3 Students
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-curriculum__right">
+          <div class="course-curriculum__episodes-card" aria-label="Course episodes">
+            <ul class="course-curriculum__episodes">
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 1 -</span>
+                    <span class="course-curriculum__episode-title">To Talk Or Not To Talk</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 2 -</span>
+                    <span class="course-curriculum__episode-title">Interpreting Your Incident Report</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 3 -</span>
+                    <span class="course-curriculum__episode-title">Protecting Your Case &amp; Gathering Evidence</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 4 -</span>
+                    <span class="course-curriculum__episode-title">Perfect Words For Perfect Impact</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 5 -</span>
+                    <span class="course-curriculum__episode-title">Pre-suit Negotiation</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 6 -</span>
+                    <span class="course-curriculum__episode-title">Standing Up To Bullies</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 7 -</span>
+                    <span class="course-curriculum__episode-title">Trial Time</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 8 -</span>
+                    <span class="course-curriculum__episode-title">Opening Statements</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 9 -</span>
+                    <span class="course-curriculum__episode-title">Mastering Cross Examination</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 10 -</span>
+                    <span class="course-curriculum__episode-title">Cross Examination (Part 2)</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 11 -</span>
+                    <span class="course-curriculum__episode-title">Anticipating Objections</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="course-curriculum__episode">
+                <div class="course-curriculum__episode-left">
+                  <i class="fa-regular fa-circle-play course-curriculum__episode-play" aria-hidden="true"></i>
+                  <div class="course-curriculum__episode-text">
+                    <span class="course-curriculum__episode-ep">Episode 12 -</span>
+                    <span class="course-curriculum__episode-title">Closing Statements</span>
+                  </div>
+                </div>
+                <div class="course-curriculum__episode-right">
+                  <span class="course-curriculum__episode-duration">0:00</span>
+                  <i class="fa-solid fa-lock course-curriculum__episode-lock" aria-hidden="true"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RATINGS & REVIEWS -->
+    <section class="course-reviews">
+      <div class="course-reviews__inner">
+        <h2 class="course-reviews__heading">
+          <span class="course-reviews__heading-main">RATINGS &amp;</span>
+          <span class="course-reviews__heading-accent">REVIEWS</span>
+        </h2>
+
+        <div class="course-reviews__empty-state" aria-label="No reviews yet">
+          <img src="assets/images/mail.png" alt="" class="course-reviews__empty-img">
+          <div class="course-reviews__empty-text">No Review Yet</div>
+        </div>
       </div>
     </section>
   </main>
@@ -144,7 +440,7 @@
           payError.textContent = err.message || 'Could not start checkout. Please try again.';
           payError.style.display = 'block';
           payBtn.disabled = false;
-          payBtn.textContent = 'Pay with Card';
+          payBtn.textContent = 'Enroll Now';
         });
       });
     })();
