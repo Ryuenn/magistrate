@@ -1024,6 +1024,22 @@ body {
   font-weight: 600;
 }
 
+.home-preview__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 /* Specific thumbnails for each episode */
 .home-preview__item--ep1 {
   background-image: url('../images/ep1.png');
