@@ -609,6 +609,7 @@ body {
 .home-prepared {
   position: relative;
   background: var(--white);
+  padding-top: 4rem; /* add more white space above "WALK INTO COURT" */
 }
 
 .home-prepared__inner {
