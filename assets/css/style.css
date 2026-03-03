@@ -2874,6 +2874,12 @@ body {
   background: var(--cyan-hover);
 }
 
+/* White spacer after stats card to separate from next section */
+.about-stats__spacer {
+  height: 40px;
+  background: var(--white);
+}
+
 /* About three-column features */
 .about-features {
   position: relative;
