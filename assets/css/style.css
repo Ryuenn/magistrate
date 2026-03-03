@@ -2812,10 +2812,12 @@ body {
 .about-stats__inner {
   position: relative;
   display: flex;
-  align-items: flex-start;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
   margin-bottom: 2rem;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .about-stats__number {
@@ -2829,12 +2831,13 @@ body {
 .about-stats__label-wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 0.25rem;
 }
 
 .about-stats__label {
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--white);
